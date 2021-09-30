@@ -29,6 +29,25 @@
     outline: none;
 }
 
+.main-btn {
+	width: 120px;
+	height: 40px;
+	border-radius: 5px;
+	color: #ff4b64;
+	font-size: 16px;
+	font-weight: 500;
+	cursor: pointer;
+	background-color: transparent;
+	border: 1px solid #ff4b64;
+	transition: background-color 0.15s, color 0.15s;
+}
+
+.main-btn:hover {
+	color: #fff;
+	background-color: #ff4b64;
+	transition: background-color 0.15s, color 0.15s;
+}
+
 a {
     text-decoration: none;
 }
@@ -108,6 +127,7 @@ body {
 
 /* first block */
 .first {
+    min-height: 650px;
     padding-top: 275px;
     padding-bottom: 244px;
     position: relative;
@@ -162,6 +182,7 @@ body {
 
 .first_form .small-input {
     width: 19%;
+    border: none;
 }
 
 .first_form button {
@@ -177,4 +198,109 @@ body {
     background-color: black;
     transition: background-color 0.15s;
     cursor: pointer;
+}
+
+.flights {
+	padding-top: 102px;
+	padding-bottom: 23px;
+	background-color: #fff;
+}
+
+.flights__heading {
+	color: #484848;
+	font-size: 30px;
+	float: left;
+}
+
+.flights__links {
+	float: right;
+}
+
+.flights__links ul {
+	list-style-type: none;
+}
+
+.flights__links ul li {
+	display: inline-block;
+}
+
+.flights__links ul li a {
+	color: #484848;
+	font-size: 16px;
+	line-height: 32px;
+	margin-left: 25px;
+}
+
+.flights__links ul li a.active {
+	color: #ff4b64;
+	font-weight: 700;
+}
+
+.flights__table {
+	margin-top: 60px;
+	width: 100%;
+}
+
+.flights__table table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.flights__table table thead {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.flights__table table thead td {
+	padding-bottom: 35px;
+	text-align: center;
+}
+
+.flights__table table thead td:first-child {
+	text-align: left;
+}
+
+.flights__table table tbody td {
+	padding: 45px 0;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.flights__table table tbody td:first-child {
+	text-align: left;
+}
+
+.flights__table table tbody td:last-child {
+	text-align: right;
+}
+
+.flights__table table tbody tr {
+	border-bottom: 1px solid #e6e6e6;
+}
+
+.flights__table table tbody td img {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.flights__table table tbody td .text {
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 24px;
+}
+
+.flights__table table tbody td span {
+	display: block;
+	margin-top: 15px;
+	color: #9a9a9a;
+}
+
+.flights__table__link {
+	text-align: right;
+}
+
+.flights__table__link a {
+	display: inline-block;
+	margin-top: 43px;
+	color: #484848;
+	font-size: 16px;
 }
